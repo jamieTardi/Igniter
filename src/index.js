@@ -6,6 +6,7 @@ import { Provider } from 'react-redux';
 import rootReducer from './Reducers';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
+import './styles/main.css';
 
 const composeEnhancer = composeWithDevTools(applyMiddleware(thunk));
 

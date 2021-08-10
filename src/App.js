@@ -2,6 +2,7 @@ import react, { useEffect } from 'react';
 import { popularGamesURL } from './api';
 import { useDispatch } from 'react-redux';
 import { loadGames } from './actions/gamesActions';
+import { Home } from './pages';
 
 function App() {
 	const dispatch = useDispatch();
@@ -9,8 +10,12 @@ function App() {
 	useEffect(() => {
 		dispatch(loadGames());
 	}, []);
-	console.log(popularGamesURL());
-	return <div className='App'></div>;
+
+	return (
+		<div className='App'>
+			<Home />
+		</div>
+	);
 }
 
 export default App;
