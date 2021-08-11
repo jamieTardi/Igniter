@@ -1,6 +1,7 @@
 html,
 body {
   background-color: #111111;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1,
@@ -11,5 +12,15 @@ h5,
 h6,
 p {
   color: #fff;
+}
+
+.game-card-image {
+  min-height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card {
+  border: none !important;
 }
 /*# sourceMappingURL=main.css.map */
